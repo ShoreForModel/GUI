@@ -1,8 +1,0 @@
-
-To install ShoreFor GUI application, open the GUI_ShoreFor_pkg.
-
-Allow extraction of files.
-
-Allow and proceed through the installation of MCR. This allows the use of any Matlab applications.
-
-Open the new extracted Matlab application ShoreFor_GUI.
