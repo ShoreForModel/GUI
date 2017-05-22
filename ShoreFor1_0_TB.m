@@ -22,8 +22,8 @@ global  hindStats calStats iShore site hWaveC hWaveH
 input_data_TB
 
 %check sizes
-if length(data) ~=length(dates_survey); errordlg('Warning: Length of shoreline data dates file does not match the length of data file, programme aborted'); break; end    
-if length(H) ~=length(dnum); errordlg('Warning: Length of wave dates file does not match the length of wave file, programme aborted'); break; end    
+if length(data) ~=length(dates_survey); errordlg('Warning: Length of shoreline data dates file does not match the length of data file, programme aborted'); return; end    
+if length(H) ~=length(dnum); errordlg('Warning: Length of wave dates file does not match the length of wave file, programme aborted'); return; end    
 
 calibrate_modelWSG85_TB(HbCal,TCal,wCal,dnumCal,dataCal)
 hindcast_data_TB(Hb,T,w,dnum,data)
